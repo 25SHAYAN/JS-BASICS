@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>Converting values to string</h1>
+    </center>
+    <hr>
+    <script>
+      document.write("<h1> CONVERTING VALUES TO STRING</h1>");
+      var bool = true;
+      document.write(typeof(bool)+"<br>");//outputs: boolean
+
+      var str1 = String(bool);//becomes a string "true"
+      document.write(typeof(str1)+"<br>");//outputs: string
+
+      var str1 = String(10.5);//returns "10.5"
+      document.write("<p><b>str1</b></p>" + str1);
+      document.write("<p><b>str1</b></p>" + typeof(str1));
+      String(123)//returns "123"
+      String(100 + 23)//returns "123"
+      String(true)//returns "true"
+      String(false)//returns "false"
+      String(123e-1)//returns "12.3"
+      String(0xFF)//returns "255"
+      String(undefined)//returns "undefined"
+      String(null)//returns "null"
+
+    </script>
+
+    <script>
+        document.write("<h1>CONVERTING VALUES TO BOOLEAN</h1>");
+        Boolean(0)//returns false
+        Boolean(null)//returns false
+        Boolean(false)//returns false
+        Boolean(undefined)//returns false
+        Boolean(NaN)//returns false
+        Boolean("")//returns false
+        Boolean(1)//returns true
+        Boolean(true)//returns true
+    </script>
+
+
+    <script>
+         document.write("<h1>CONVERSIONS USING OPERATORS</h1>");
+         let x1 ="10";//x1 is a string
+         let y1 = +x1;
+         alert(typeof(y1));//outputs:number
+         alert(y1);//outputs:10
+
+         let x2 =10;//x1 is a number
+         let y2=x2 + "";
+         alert(typeof(y2));//outputs:string
+         alert(y2);//outputs:10
+
+         
+         let x3 ="15";//x1 is a string
+         let y3=x3 - 0;
+         alert(typeof(y3));//outputs:number
+         alert(y3);//outputs:15
+    </script>
+</body>
+</html>

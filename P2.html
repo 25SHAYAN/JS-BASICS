@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+    
+</head>
+<body>
+    <center>JS-VARIABLES.........!</center>
+    <hr>
+    <pre>
+        DATATYPE
+        1)PRIMITIVE DATA TYPES
+        2)NON-PRIMITIVE/DERIVED DATA TYPES
+
+        1)PRIMITIVE DATA TYPES
+            -INT(INTEGER)->it accept only round numbers EG-0-9.
+            -FLOAT->it accept decimal value EG-10.5
+            -BOOLEAN->either true or false
+            -CHAR->it accept single character eg:-A,a.
+            -VOID->returns null value
+            <br>
+            2)NON PRIMITIVE/DERIVED DATA TYPES
+            - ARRAY
+            - SRTUCTURE
+            - UNION
+            - ENUM
+            - POINTER
+            - FUNCTION
+    </pre>
+    <br>
+    <script>
+        //var,let  and const are keywords ,is used for to declare the variable
+        var firstname;
+        document.write(firstname);
+         
+        
+        var a ="apple";
+        document.write(a);
+
+        let b = 100.5;
+        document.write(b);
+
+        var second ;
+        document.write("<hr>",second);
+        document.write("<hr>","<b>without value: </b>",second,"<br>");
+
+        second = "HELLO JS";
+        document.write("<br>","<b>with value: </b>",second,"<br>");
+        document.write("<b>with value: </b>"+second+"<br>");
+        document.write("with value:",second,"</b><br>");
+        document.write("<b>with value:"+second+"</b><br>");
+        document.write(`<b>with value:${second}</b><br>`);
+        document.write(typeof(second),"<br><hr>");
+        
+        second = "A";
+        document.write("<br>","<b>with value: </b>",second,"<br>");
+        document.write("<b>with value: </b>"+second+"<br>");
+        document.write("with value:",second,"</b><br>");
+        document.write("<b>with value:"+second+"</b><br>");
+        document.write(`<b>with value:${second}</b><br>`);
+        document.write(typeof(second),"<br><hr>");
+        
+        second = 100;
+        document.write("<br>","<b>with value: </b>",second,"<br>");
+        document.write("<b>with value: </b>"+second+"<br>");
+        document.write("with value:",second,"</b><br>");
+        document.write("<b>with value:"+second+"</b><br>");
+        document.write(`<b>with value:${second}</b><br>`);
+        document.write(typeof(second),"<br><hr>");
+        
+        second = 10000.55666;
+        document.write("<br>","<b>with value: </b>",second,"<br>");
+        document.write("<b>with value: </b>"+second+"<br>");
+        document.write("with value:",second,"</b><br>");
+        document.write("<b>with value:"+second+"</b><br>");
+        document.write(`<b>with value:${second}</b><br>`);
+        document.write(typeof(second),"<br><hr>");
+        
+        second = true;
+        document.write("<br>","<b>with value: </b>",second,"<br>");
+        document.write("<b>with value: </b>"+second+"<br>");
+        document.write("with value:",second,"</b><br>");
+        document.write("<b>with value:"+second+"</b><br>");
+        document.write(`<b>with value:${second}</b><br>`);
+        document.write(typeof(second),"<br><hr>");
+
+        second = false;
+        document.write("<br>","<b>with value: </b>",second,"<br>");
+        document.write("<b>with value: </b>"+second+"<br>");
+        document.write("with value:",second,"</b><br>");
+        document.write("<b>with value:"+second+"</b><br>");
+        document.write(`<b>with value:${second}</b><br>`);
+        document.write(typeof(second),"<br><hr>");
+        /*var is a weaker signal and always have global scope*/
+        /*let and const are block scope variabels*/
+        
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>SCOPES</h1>
+    </center>
+    <hr>
+    <script>
+        /*let and const always have local (block) scope*/
+   let x=15;//global variable we can use anywhere in code
+   if(x>12){
+       let a=567;//local scope variables
+       var b=12345;//since we use var keyword it acts like global 
+       document.write(`<h3>Local a =${a} </h3>`);
+       document.write(`<h3>Local b =${b} </h3>`);
+       document.write(`<h3>Local c=${x} </h3>`);
+   }
+
+   document.write(`<hr><br>`);
+   document.write(`<h3>Local b =${b} </h3>`);
+   
+   document.write(`<hr><br>`);
+   for(let i=0;i<x;i++){
+    document.write(`<h3>global x =${i} </h3>`);
+   }
+
+   document.write(`<hr><br>`);
+
+
+   document.write(`<h3>Global x =${x} </h3>`);
+   </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>TYPE CONVERSION</h1>
+    </center>
+    <hr>
+    <script>
+        document.write("3" - 2 + "<br>"); //outputs:1
+        document.write("3" + 2 + "<br>"); //outputs:"32"(because  + is also concatination operator)
+       document.write(+"3" + 2 + "<br>"); //outputs:"32"(because  + is also concatination operator to convert 3 to number we used +) 
+        document.write(3 + "2" + "<br>"); //outputs:"32"
+        document.write("3" *2 + "<br>"); //outputs:6
+        document.write("3" * "2" + "<br>"); //outputs:6
+        document.write("10"/"2" + "<br>"); //outputs:5
+
+        document.write("<h1> CONVERTING VALUES TO NUMBERS</h1>");
+        let str = "123";
+        document.write(typeof(str)+"<br>");//outputs :string
+        let num = Number(str);//because a  number 123
+        document.write(typeof(num)+"<br>");//outputs :number
+        var number1 = Number("10.5");
+        document.write(typeof(number1)+"<br>");//outputs :number
+
+
+        let x="123.343";
+        var a = Number(x);//convert to any type into number
+        document.write(`<h3> Number = ${a}</h3>`);
+
+        //to convert decimal value into number we use parseint
+
+        let a1 = parseInt(a);
+        document.write(`<h3> int =${a1}</h3>`);
+       
+       
+        let a2 = parseInt(13.234);
+        document.write(`<h3> int =${a2}</h3>`);
+
+        
+        let a3 = parseFloat(x);
+        document.write(`<h3> float =${a3}</h3>`);
+
+        let a4 = parseFloat(321);
+        document.write(`<h3> float =${a4}</h3>`);
+
+        let y=1238.748554848484887;
+        document.write(`<h3>Y variable value is =${y}</h3>`);
+        document.write(`<h3>Y variable value is =${y.toFixed()}</h3>`);
+        document.write(`<h3>Y variable value is =${y.toFixed(1)}</h3>`);
+      
+        document.write(`<h3>Y variable value is =${y.toFixed(2)}</h3>`);
+      
+        document.write(`<h3>Y variable value is =${y.toFixed(3)}</h3>`);
+      
+        document.write(`<h3>Y variable value is =${y.toFixed(4)}</h3>`);
+      //POSIBILITIES TO CONVERT SOME OTHER DATATYPES TO NUMBER
+      Number(true)//returns 1
+      Number(false)//returns 0
+      Number(null)//returns 0
+      Number("123")//returns 123
+      Number(" ")//returns 0
+      Number("")//returns 0
+      Number("123e-1")//returns 12.3
+      Number("0xFF")//returns 255 (hexadecimal representation
+      Number("undefined")//returns NaN
+      Number("NULL")//returns NaN
+      Number("Hello World!")//returns NaN   
+      
+</script>
+</body>
+</html>

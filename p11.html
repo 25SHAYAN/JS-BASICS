@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>FUNCTIONS</h1>
+    </center>
+    <pre>
+        1.  DEFAULT FUNCTION (NO PARAMETER,NO RETURN)
+        2.  WITHOUT PARAMETER,WITH RETURN value
+        3.  WITH PARAMETER,WITHOUT RETURN value
+        4.  WITH PARAMETER,WITH RETURN VALUE
+    </pre>
+    <hr>
+    <h1 onclick="">  DEFAULT FUNCTION (NO PARAMETER,NO RETURN)</h1>
+    <script>
+      function defaultfun(){
+document.write("This is default function.........!")
+      }
+      defaultfun();
+    </script>
+
+    <hr>
+
+
+    <h1>WITHOUT PARAMETER,WITH RETURN value</h1>
+    <script>
+        function addfun(){
+            let first=10,second =20,sum;
+            sum=first+second;
+          return sum;
+      
+        //    document.write(`sum is = ${sum}`);
+           
+        }
+   
+       document.write(`sum of first and second is = ${addfun()}`);
+    </script>
+
+    <hr>
+    <h1>WITH PARAMETER,WITHOUT RETURN value</h1>
+    <script>
+        function studdetails(firstname,secondname){
+         //   let firstname="HTML",secondname ="css",;
+  
+           document.write(`<p>first parameter value is :${firstname}</p>`);
+           document.write(`<p>second parameter value is :${secondname}</p>`);
+
+           let fn,sn,fullname;
+
+           fn=firstname;
+           sn=secondname;
+
+           
+           document.write(`<p>first parameter value is :${fn}</p>`);
+           document.write(`<p>second parameter value is :${sn}</p>`);
+
+           fullname=firstname +" "+ secondname;
+          // fullname=fn+sn;same as aboive another type
+           
+           document.write(`<p>fullname value is:${fullname}</p>`);
+           
+           //document.write(`<p>firstname value is :${fullname}</p>`);another type
+
+   
+ 
+        }
+          studdetails("HTML",100);
+       
+    </script>
+
+<hr>
+<h1>WITH PARAMETER,WITH RETURN value</h1>
+<script>
+    function studdetails1(firstname,secondname){
+     
+        let fn,sn,fullname;
+
+       fn=firstname;
+       sn=secondname;
+
+      fullname=fn+ " "+sn;
+       return fullname;
+
+    }
+      document.write(studdetails1("HTML-5","css-3"));
+   
+</script>
+<hr>
+<h1>ECMA SCRIPT CODE</h1>
+<!--ECMA SCRIPT CODE-->
+<script>
+    document.write("<h1> FUNCTION DEFINING...!</h1>");
+    function sum(a,b){
+        return a+b;
+    }
+    document.write(`<h3> sum = ${sum(33,44)}</h3>`);
+
+    document.write("<h1>FUNCTION EXPRESSION.....!</h1>");
+    let fullname = function(firstname,lastname){
+        return firstname+ " "+lastname;
+    };
+    document.write(`<h3> fullname = ${fullname("HTML","CSS")}</h3>`);
+   </script>
+   <hr>
+   <script>
+    document.write("<h1>ARROW FUNCTION...........!</h1>");
+    let js=()=>{
+        document.write("THIS IS ARROW FUNCTION..!");
+    };
+    js();
+   
+</script>
+<hr>
+<h1>arrow function with parameter and return type</h1>
+<script>
+let rem = (a,b)=>{
+    return a%b;
+}
+document.write(`<h3> rem = ${rem(33,4)}</h3>`);
+   
+</script>
+<hr>
+<h1>CALL BACK FUNCTION {VVVV IMP}.....!</h1>
+<script>
+    function howareyou(question,yes,no){
+     if (confirm(question)) {
+        yes();//since it is declared as fun
+     } else {
+        no();
+     }
+    }
+    howareyou("How is your day",function(){document.write("good");},function(){document.write("bad");});
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+    <style>
+        table,th,td{
+            background-color: orangered;
+            border: 2px solid rgb(232, 145, 15);
+            padding: 20px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CONDITION STATEMENT.......!</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>Simple if</li>
+        <li>if else</li>
+        <li>if else ladder</li>
+        <li>Switch Case</li>
+    </ol>
+    <hr>
+    <!--script>
+        function testCondition(){
+            let firstnumber = "20",secondnumber = 20;
+            if( firstnumber == secondnumber){
+                alert("condition is true.....!");
+            }
+            //else part
+            else{
+                alert("condition is not true.....!");
+            }
+        }
+        testCondition();
+
+        function testCondition1(){
+            let firstnumber1 = "20",secondnumber1 = 20;
+            if( firstnumber1 === secondnumber1){
+                alert("condition is true.....!");
+            }
+            //else part
+            else{
+                alert("condition is not true.....!");
+            }
+        }
+        testCondition1();
+
+        function testCondition2(){
+            let first=30,second=20;
+        let  message = first>second ?"condition is true....!" : "condition is false";
+        document.write(message);
+        }
+        testCondition2();
+    </script>-->
+    <table>
+        <tr>
+            <th><label for="">Enter First Number:</label></th>
+            <td><input type="number" name="firstnumber" id="firstnumber" placeholder="first number"></td>
+        </tr>
+
+        <tr>
+            <th><label for="">Enter second Number:</label></th>
+            <td><input type="number" name="secondnumber" id="secondnumber" placeholder="second number"></td>
+        </tr>
+
+        <tr>
+            <th><label for="">Enter Third Number:</label></th>
+            <td><input type="number" name="thirdnumber" id="thirdnumber" placeholder="third number"></td>
+        </tr>
+        <tr>
+            <th><label for="">Result :</label>
+            </th>
+            <td><p id="result"></p></td>
+        </tr>
+
+        <tr>
+            <td><button type="button" id="btn-cnd">submit</button></td>
+            <td><button type="button" id="btn-cnl">cancel</button></td>
+        </tr>
+
+      
+    </table>
+
+    <script>
+        function checkcondition(){
+          let firstnumber=parseInt(document.getElementById("firstnumber").value);
+          //instead of parse we can use + to convert string to number
+          let secondnumber= +document.getElementById("secondnumber").value;
+          let thirdnumber = +document.getElementById("thirdnumber").value;
+         // alert(firstnumber);
+          //alert(secondnumber);
+         // alert(thirdnumber);
+        
+       //let sum = firstnumber + secondnumber;
+      // document.write(sum);it will give concatnated result eg 1,2 result 12
+
+     // document.write(typeof(firstnumber));returns string
+      //document.write(typeof(secondnumber));
+
+      //to convert string to number we use parseint
+      //document.write(typeof(firstnumber));
+      //document.write(typeof(secondnumber));
+
+
+      //for if else ladder we use thirdnumber
+      if(firstnumber >secondnumber && firstnumber>thirdnumber ){
+        //document.write("first is big");//for getting text for getting result fallow below
+        document.getElementById("result").innerHTML = "First number is big";//for getting result as sentence
+      }
+      else if(secondnumber>firstnumber && secondnumber>thirdnumber){
+        document.getElementById("result").innerHTML = "second number is big";
+      }
+      else if(thirdnumber>firstnumber && thirdnumber>secondnumber){
+        document.getElementById("result").innerHTML = "third number is big";
+
+      }
+      else if(firstnumber===secondnumber ||firstnumber===thirdnumber ||secondnumber===thirdnumber ){
+        document.getElementById("result").innerHTML = "numbers are equall";
+        
+
+      }
+   
+
+      else {
+        document.getElementById("result").innerHTML = "enter valid input";
+      }
+        }
+   
+        document.getElementById("btn-cnd").onclick = checkcondition;
+
+
+    </script>
+</body>
+</html>
